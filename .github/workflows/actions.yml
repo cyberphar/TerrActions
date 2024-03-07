@@ -83,6 +83,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
+
     - name: Désenregistrer l'AMI
       run: |
         ami_id=$(aws ec2 describe-images --filters "Name=name,Values=WebApp*" --query 'Images[0].ImageId' --output text)
