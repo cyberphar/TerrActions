@@ -48,7 +48,7 @@ source "amazon-ebs" "static-web-ami" {
   source_ami                  = "${var.base_ami}"
   ssh_username                = "${var.ssh_username}"
 
-  iam_instance_profile        = "LabRole"
+  iam_instance_profile        = "LabInstanceProfile"
 
   tags = {
     Name = "${var.app_name}"
