@@ -17,7 +17,7 @@ variable "associate_public_ip_address" {
 }
 variable "base_ami" {
   type    = string
-  default = "ami-007855ac798b5175e"
+  default = "ami-0de7e0d98fad2c425"
 }
 variable "instance_type" {
   type    = string
